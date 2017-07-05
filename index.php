@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if((isset($_SESSION['zalogowany']))&&($_SESSION['zalogowany']==true))
+    {
+        header('Location: within.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,7 +21,13 @@
             password: <br /> <input type="password" name="password"><br /><br /> 
             <input type="submit" value="ОК">
         </form>
+        <br />
 
+<?php
+    if(isset($_SESSION['mistake']))
+    {
+        echo $_SESSION['mistake'];
+    }
+?>
     </body>
 </html>
-<!---->

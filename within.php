@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+    if(!isset($_SESSION['zalogowany']))
+    {
+        header('Location: index.php');
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,11 +18,10 @@
     </head>
     <body>
 
-        <form action="checkIn.php" method="post">
-            login: <br /> <input type="text" name="login"><br />
-            password: <br /> <input type="password" name="password"><br /><br /> 
-            <input type="submit" value="ОК">
-        </form>
+<?php
+    echo "<p>Witaj ".$_SESSION['user'].'![<a href="logout.php"> Logout</a>]</p>';
+?>
 
     </body>
 </html>
+
