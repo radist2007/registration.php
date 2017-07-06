@@ -17,9 +17,10 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-
+dfasdfadsfadfs
 <?php
     echo "<p>Witaj ".$_SESSION['user'].'![<a href="logout.php"> Logout</a>]</p>';
+    
 ?>
 
     </body>
