@@ -17,11 +17,13 @@
         <meta name="keywords" content="тест, логін, пароль" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <script src="js/jsTimer.js"></script>
     </head>
-    <body>
+    <body onload="time()">
 
         <header class="header">
             <h1>bylo4na</h1>
+            <h4 id="time"></h4>
         </header>
 
         <div class="login">
