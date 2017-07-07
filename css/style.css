@@ -6,15 +6,23 @@
 html {
 	background-color: green;
 }
+/*---------------------------------------------------------------------------*/
 header {
 	background: green;
 	color: #fff;
 	padding: 20px;
 }
+#test {
+	width: 100px;
+	height: 200px;
+	background-color: rebeccapurple;
+}
 
-h4 {
-	float: right;
-	color: red;
+/*---------------------------------------------------------------------------*/
+h4#time {
+	padding: 50px;
+	background-color: red;
+	color: #ffff00;
 }
 
 .login {
@@ -39,6 +47,7 @@ h4 {
 	border-style: none
 }
 
+/*---------------------------------------------------------------------------*/
 .wrap {
 	text-align: center;
 	border: 1px solid black;

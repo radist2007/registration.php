@@ -9,7 +9,7 @@
 
 
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>bylo4na</title>
@@ -23,7 +23,6 @@
 
         <header class="header">
             <h1>bylo4na</h1>
-            <h4 id="time"></h4>
         </header>
 
         <div class="login">
@@ -34,6 +33,9 @@
             </form>
             <a href="registration.php">registration</a>
         </div>
+
+            <h4 id="time"></h4>
+            <div id="test">123</div>
 
 <?php
     if(isset($_SESSION['mistake']))
