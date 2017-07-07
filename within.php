@@ -17,7 +17,9 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-dfasdfadsfadfs
+        <div class="header">
+            <h1>Авторизовано</h1>
+        </div>
 <?php
     echo "<p>Witaj ".$_SESSION['user'].'![<a href="logout.php"> Logout</a>]</p>';
     
