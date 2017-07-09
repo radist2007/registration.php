@@ -11,12 +11,14 @@
     require_once "dbconnect.php";          //??????????????????????????????????????????
 
     
-    $connect = @new mysqli($host, $user, $password, $database);   // Open connect!  @ - не пускає опис помилки
+    $connect = @new mysqli($host, $user, $password, $database);   // Open connect!  @ - не пускає опис помилки старший аналог try..catch
 
     if ($connect->connect_errno!=0)           //Якщо у connect  --  connect error nomber != 0
     {
         echo "Error: ".$connect->connect_errno."Ops..".$connect->connect_errno;    //Повідомляємо про помилку
-    } else {
+    }
+    else
+    {
 
         $login = $_POST['login'];                                        //???????????????????????????
         $password = $_POST['password'];                                  //??????????????????????????
@@ -49,22 +51,13 @@
                     $_SESSION['mistake'] = '<span style="color:red">Не правильний логін або пароль!</span>';//Повідомляємо про помилку
                     header('Location: index.php');           //Повертаємо на головну сторінку
                 }
-
-            } else {
-
+            }
+            else
+            {
                 $_SESSION['mistake'] = '<span style="color:red">Не правильний логін або пароль!</span>';//Повідомляємо про помилку
                 header('Location: index.php'); //Повертаємо на головну сторінку
-
             }
         }
-
         $connect->close();  // Close connect.
-
     }
-
-
-
-
-
-
 ?>

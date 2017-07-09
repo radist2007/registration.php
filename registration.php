@@ -46,18 +46,33 @@
             $_SESSION['e_password']="Пароль повинен мати від 8 до 20 знаків";
         }
 
-        if($password1!=$password2)
+        if($password1!=$password2)  //Перевіряємо введені паролі на співпадіння
         {
             $all_OK=false;
             $_SESSION['e_password']="Паролі не співпадають";
         }
 
         // Хешування пароля 
-        $password_hash = password_hash($password1, PASSWORD_DEFAULT); 
+        $password_hash = password_hash($password1, PASSWORD_DEFAULT); //Хешуємо пароль
 
-        echo $password_hash;
+        //Перевірка на існування користувача
+        require_once "dbconnect.php";   //Підключаємо одноразово;
+        mysqli_report(MYSQLI_REPORT_STRICT);
 
-         exit();
+        try
+        {
+            $connect = new mysqli($host, $user, "aaa", $database);   // Open connect!
+            if ($connect->connect_errno!=0)           //Якщо у connect  --  connect error nomber != 0
+            {
+                throw new Exception(mysqli_connect_errno()); //Кинь новий вийняток
+            }
+
+        }
+        catch(Exception $e) //Злови вийнятки, якщо якісь були кинуті
+        {
+            echo '<span style="color:red;">Помилка на сервері! Вибачте за незручності та просимо про реєстрацію іншим разом!</span>';
+            echo '<br />Інформація для розробника: '.$e; 
+        }
 
         if($all_OK==true)
         {
