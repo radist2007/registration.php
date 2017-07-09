@@ -12,16 +12,10 @@ header {
 	color: #fff;
 	padding: 20px;
 }
-#test {
-	width: 100px;
-	height: 200px;
-	background-color: rebeccapurple;
-}
 
 /*---------------------------------------------------------------------------*/
 h4#time {
-	padding: 50px;
-	background-color: red;
+	float: right;
 	color: #ffff00;
 }
 

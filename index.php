@@ -23,6 +23,8 @@
 
         <header class="header">
             <h1>bylo4na</h1>
+            <!--<h4 id="time"></h4>-->
+
         </header>
 
         <div class="login">
@@ -34,8 +36,6 @@
             <a href="registration.php">registration</a>
         </div>
 
-            <h4 id="time"></h4>
-            <div id="test">123</div>
 
 <?php
     if(isset($_SESSION['mistake']))
