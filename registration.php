@@ -52,6 +52,13 @@
             $_SESSION['e_password']="Паролі не співпадають";
         }
 
+        // Хешування пароля 
+        $password_hash = password_hash($password1, PASSWORD_DEFAULT); 
+
+        echo $password_hash;
+
+         exit();
+
         if($all_OK==true)
         {
             //Додаэмо реестаранта до бази
