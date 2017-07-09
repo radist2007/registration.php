@@ -26,11 +26,11 @@
 
         //Перевірити правельність адреси email
         $email = $_POST['email'];
-        $emailB = filter_var($email, FILTER_SANITIZE_EMAIL); // санітарний фільтр - безпечний
+        $emailB = filter_var($email, FILTER_SANITIZE_EMAIL); // санітарний фільтр   emailB->безпечний(без недозволених у emaili знаків)
 
         // echo $emailB; exit();
 
-        if((filter_var($emailB, FILTER_VALIDATE_EMAIL)==false) ||($emailB!=$email))
+        if((filter_var($emailB, FILTER_VALIDATE_EMAIL)==false) ||($emailB!=$email))  //Перевірка на правельність напису email
         {
             $all_OK=false;
             $_SESSION['e_email']="Напишіть правельну адресу e-mail!";
@@ -56,15 +56,43 @@
         $password_hash = password_hash($password1, PASSWORD_DEFAULT); //Хешуємо пароль
 
         //Перевірка на існування користувача
-        require_once "dbconnect.php";   //Підключаємо одноразово;
-        mysqli_report(MYSQLI_REPORT_STRICT);
+        require_once "dbconnect.php";   //Підключаємо одноразове зєднання з файлом зєднання з базою;
+        mysqli_report(MYSQLI_REPORT_STRICT);   //????????????????????????????????
 
         try
         {
-            $connect = new mysqli($host, $user, "aaa", $database);   // Open connect!
+            $connect = new mysqli($db_host, $db_user, $db_password, $db_database);   // Open connect!
             if ($connect->connect_errno!=0)           //Якщо у connect  --  connect error nomber != 0
             {
                 throw new Exception(mysqli_connect_errno()); //Кинь новий вийняток
+            }
+            else
+            {
+                //Чи nick вже зарезервований?
+                $rezultat = $connect->query("SELECT id FROM users WHERE name='$nick'");
+
+                if(!$rezultat) throw new Exception($connect->error);   //Викидаємо помилку
+
+                $ile_takich_nickow = $rezultat->num_rows;              //Визначаємо кількість рядків повернутого запиту з бази
+                if($ile_takich_nickow>0)                               //Якщо рядків більше 1, одже nick зайнятий
+                {
+                    $all_OK=false;
+                    $_SESSION['e_nick']="Вже існує акаунт з таким ніком, вибери інший";
+                }
+
+                //Чи email вже існує в базі?
+                $rezultat = $connect->query("SELECT id FROM users WHERE email='$email'");    //Достаємо з бази email реєстранта
+
+                if(!$rezultat) throw new Exception($connect->error);   //Викидаємо помилку
+
+                $ile_takich_maili = $rezultat->num_rows;              //Визначаємо кількість рядків повернутого запиту з бази
+                if($ile_takich_maili>0)                               //Якщо рядків більше 1, одже маіл зайнятий
+                {
+                    $all_OK=false;
+                    $_SESSION['e_email']="Вже існує акаунт приписаний до цього e-mail";
+                }
+
+                $connect->close();        //Закриваємо зєднання з базою
             }
 
         }
@@ -86,7 +114,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8">                     <!--    -->
         <title>bylo4na registration</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
@@ -104,26 +132,26 @@
 
                     Nickname: <br /> <input type="text" name="nick" /><br />
                     <?php
-                        if(isset($_SESSION['e_nick']))
+                        if(isset($_SESSION['e_nick']))      //Якщо помилка e_nick існує
                         {
-                            echo '<div class="error">'.$_SESSION['e_nick'].'</div>';
-                            unset($_SESSION['e_nick']);
+                            echo '<div class="error">'.$_SESSION['e_nick'].'</div>';  //Виводимо помилку e_nick
+                            unset($_SESSION['e_nick']);                               //Очищуємо змінну e_nick
                         }
                     ?>
                     E-mail: <br /> <input type="text" name="email" /><br />
                     <?php
-                        if(isset($_SESSION['e_email']))
+                        if(isset($_SESSION['e_email']))      //Якщо помилка e_email існує
                         {
-                            echo '<div class="error">'.$_SESSION['e_email'].'</div>';
-                            unset($_SESSION['e_email']);
+                            echo '<div class="error">'.$_SESSION['e_email'].'</div>';  //Виводимо помилку e_email
+                            unset($_SESSION['e_email']);                               //Очищуємо змінну e_email
                         }
                     ?>
                     Your password: <br /> <input type="password" name="passwordReg1" /><br />
                     <?php
-                        if(isset($_SESSION['e_password']))
+                        if(isset($_SESSION['e_password']))      //Якщо помилка e_password існує
                         {
-                            echo '<div class="error">'.$_SESSION['e_password'].'</div>';
-                            unset($_SESSION['e_password']);
+                            echo '<div class="error">'.$_SESSION['e_password'].'</div>';  //Виводимо помилку e_password
+                            unset($_SESSION['e_password']);                               //Очищуємо змінну e_password
                         }
                     ?>
                     Repid password: <br /> <input type="password" name="passwordReg2" /><br />
