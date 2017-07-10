@@ -1,9 +1,13 @@
 <?php
     session_start();                                                       //Стартуємо сесію
-    if((isset($_SESSION['zalogowany']))&&($_SESSION['zalogowany']==true))  //Перевіряємо чи існує сесійна змінна залоговани і чи вона це правда
+    if(!isset($_SESSION['udanarejestracja']))  //Перевіряємо чи існує сесійна змінна залоговани і чи вона це правда
     {
-        header('Location: within.php');                                    //Переходимо на сторінку within.php
+        header('Location: index.php');                                    //Переходимо на сторінку within.php
         exit();                                                            //Не загружаємо наступну частину сторінки
+    }
+    else
+    {
+        unset($_SESSION['udanarejestracja']);
     }
 ?>
 
@@ -23,18 +27,14 @@
 
         <header class="header">
             <h1>bylo4na</h1>
+            <h2>Дякуємо за реєстрацію</h2>
             <!--<h4 id="time"></h4>-->
 
         </header>
 
-        <div class="login">
-            <form action="checkIn.php" method="post">
-                login: <input type="text" name="login">
-                password: <input type="password" name="password">
-                <input id="loginSubmit" type="submit" value="ОК">
-            </form>
-            <a href="registration.php">registration</a>
-        </div>
+
+            <a href="index.php">Увійти на свій акаунт</a>
+
 
 
 <?php

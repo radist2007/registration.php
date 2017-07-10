@@ -40,7 +40,7 @@
         $password1 = $_POST['passwordReg1'];
         $password2 = $_POST['passwordReg2'];
 
-        if((strlen($password1)<8) || (strlen($password2)>20)) // strlen - довжина 
+        if((strlen($password1)<4) || (strlen($password2)>20)) // strlen - довжина 
         {
             $all_OK=false;
             $_SESSION['e_password']="Пароль повинен мати від 8 до 20 знаків";
@@ -91,6 +91,19 @@
                     $all_OK=false;
                     $_SESSION['e_email']="Вже існує акаунт приписаний до цього e-mail";
                 }
+                if($all_OK==true)
+                {
+                    //Всі тести пройдено, додаємо користувача
+                    if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email')"))
+                    {
+                        $_SESSION['udanarejestracja']=true;
+                        header('Location: witamy.php');
+                    }
+                    else
+                    {
+                        throw new Exception($connect->error);   //Викидаємо помилку
+                    }
+                }
 
                 $connect->close();        //Закриваємо зєднання з базою
             }
@@ -102,12 +115,6 @@
             echo '<br />Інформація для розробника: '.$e; 
         }
 
-        if($all_OK==true)
-        {
-            //Додаэмо реестаранта до бази
-            echo "Вдала реєстарація";
-            exit();
-        }
     }
 ?>
 
