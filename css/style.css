@@ -7,10 +7,10 @@ html {
 	background-color: green;
 }
 /*---------------------------------------------------------------------------*/
-header {
+/*header {
 	background: green;
 	color: #fff;
-	padding: 20px;
+	padding: 20px;*/
 }
 
 /*---------------------------------------------------------------------------*/
@@ -47,11 +47,11 @@ h4#time {
 	border: 1px solid black;
 }
 
-#formReg form {
+/*#formReg form {
 	padding: 50px;
 	background-color: green;
 	color: #fff;
-}
+}*/
 
 .error {
 	color: red;
