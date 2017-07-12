@@ -9,7 +9,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
     <head>
         <meta charset="UTF-8">
         <title>bylo4na</title>
@@ -21,16 +21,6 @@
         <script src="js/jsTimer.js"></script>
     </head>
     <body onload="time()">
-
-        <header class="">
-            <!--<a class="w3-bar-item w3-button w3-green">bylo4na</a>-->
-            <a href="#" class=""><i class="fa fa-home"></i></a>
-            <!--<a href="#" class=""><i class="fa fa-search"></i></a>
-            <a href="#" class=""><i class="fa fa-envelope"></i></a>
-            <a href="#" class=""><i class="fa fa-globe"></i></a>-->
-            <a href="#" class=""><i class="fa fa-sign-in"></i></a>
-            <!--<h4 id="time"></h4>-->
-        </header>
 
         <div class="login">
             <form class="" action="checkIn.php" method="post">
