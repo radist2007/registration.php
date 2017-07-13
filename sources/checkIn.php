@@ -4,13 +4,13 @@
 
     if((!isset($_POST['login'])) || (!isset($_POST['password'])))   // Перевіряємо чи пароль та логін встановлені для цієї сесії
     {
-        header('Location: index.php');     //Повернаємо на стартову сторінку
+        header('Location: ../index.php');     //Повернаємо на стартову сторінку
         exit();                            //Закриваємо сесію
     }
 
     require_once "dbconnect.php";          //Одноразово підєднуемось до файлу dbconnect.php
 
-    
+
     $connect = @new mysqli($db_host, $db_user, $db_password, $db_database);   // Open connect!  @ - не пускає опис помилки старший аналог try..catch
 
     if ($connect->connect_errno!=0)           //Якщо у connect  --  connect error nomber != 0
@@ -49,13 +49,13 @@
                 else                               //Хаш паролі не співпали
                 {
                     $_SESSION['mistake'] = '<span style="color:red">Не правильний логін або пароль!</span>';//Повідомляємо про помилку
-                    header('Location: index.php');           //Повертаємо на головну сторінку
+                    header('Location: ../index.php');           //Повертаємо на головну сторінку
                 }
             }
             else
             {
                 $_SESSION['mistake'] = '<span style="color:red">Не правильний логін або пароль!</span>';//Повідомляємо про помилку
-                header('Location: index.php'); //Повертаємо на головну сторінку
+                header('Location: ../index.php'); //Повертаємо на головну сторінку
             }
         }
         $connect->close();  // Close connect.

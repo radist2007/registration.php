@@ -2,7 +2,7 @@
     session_start();                                                       //Стартуємо сесію
     if((isset($_SESSION['zalogowany']))&&($_SESSION['zalogowany']==true))  //Перевіряємо чи існує сесійна змінна залоговани і чи вона це правда
     {
-        header('Location: within.php');                                    //Переходимо на сторінку within.php
+        header('Location: sources/within.php');                                    //Переходимо на сторінку within.php
         exit();                                                            //Не загружаємо наступну частину сторінки
     }
 ?>
@@ -23,14 +23,14 @@
     <body onload="time()">
 
         <div class="login">
-            <form class="" action="checkIn.php" method="post">
+            <form class="" action="sources/checkIn.php" method="post">
                 login: <input class="" type="text" name="login" placeholder="вкажіть логін" required>
-                password: <input class="" type="password" name="password" required>
+                password: <input class="" type="password" name="password" >
                 <input class="" id="loginSubmit" type="submit" value="ОК">
             </form>
             <br />
         </div>
-            <a href="registration.php">registration</a>
+            <a href="sources/registration.php">registration</a>
 
 
 <?php
