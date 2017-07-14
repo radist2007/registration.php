@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+    background-image: url("../img/escheresque_ste.png");
+
+}
+
+.wrap {
+
+    height: 100%;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#loginSubmit {
+    border-radius: 2px;
+    border-style: none;
+    width: 100px;
+    height: 25px;
+    background-color: #36b17a;
+}
