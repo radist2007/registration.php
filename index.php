@@ -7,7 +7,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="ua">
     <head>
@@ -23,15 +22,19 @@
     <body onload="time()">
 
 
-        <div class="wrap">
-            <div class="login">
-                <form action="sources/checkIn.php" method="post">
-                    login: <input type="text" name="login" placeholder="вкажіть логін" required>
-                    password: <input type="password" name="password" >
-                    <input id="loginSubmit" type="submit" value="ОК">
-                </form>
-                <br />
-                <a href="sources/registration.php">registration</a>
+        <div class="container">
+            <div class="wrap">
+                <div class="login">
+                    <form action="sources/checkIn.php" method="post">
+                        <label>login:</label>
+                            <input type="text" name="login" placeholder="вкажіть логін" required>
+                        <label>password:</label> 
+                            <input type="password" name="password" >
+                        <input id="loginSubmit" type="submit" value="ОК">
+                    </form>
+                    <br />
+                </div>
+                    <a href="sources/registration.php">registration</a>
             </div>
         </div>
 
