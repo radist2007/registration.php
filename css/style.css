@@ -1,21 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
     background-image: url("../img/escheresque_ste.png");
 
 }
-
-.wrap {
-
-    height: 100%;
-    margin: auto;
-    border: 1px solid black;
-    text-align: center;
+.container {
+    position: fixed;
+    display: flex;
+     height: 100%; 
+     width: 100%; 
+      /* border: 3px solid yellow;   */
 }
 
-#loginSubmit {
+.wrap {
+    border-radius: 10px;
+      /* border: 3px dotted red;   */
+    background-image: url("../img/concrete-texture.png");
+     height: inherit; 
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column;      
+    justify-content: center;    
+     margin: auto; 
+     text-align: center; 
+}
+
+.login {
+    /* border: 3px solid green;  */
+    height: inherit;
+    width: 80%;
+    display: flex;    
+    justify-content: center;    
+      margin: auto;  
+}
+
+.form {
+      /* border: 3px solid goldenrod;   */
+    height: inherit;
+    min-height: 200px;
+    width: inherit;
+    display: flex;   
+     justify-content: space-around; 
+    flex-direction: column;      
+    margin: auto;   
+}
+
+.form label {
+    
+}
+
+.inp {
+    border-radius: 5px;
+    border-style: solid;
+    /* height: 20%; */
+    padding: 15px;
+}
+
+.loginSubmit {
     border-radius: 2px;
     border-style: none;
-    width: 100px;
-    height: 25px;
+     width: auto;   
+    /* height: 25px;   */
+    padding: 15px;
     background-color: #36b17a;
 }
