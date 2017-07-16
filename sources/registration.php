@@ -133,11 +133,15 @@
 
     <body>
 
-        <div class="wrap">
-            <div id="formReg"> 
-                <form method="post">
 
-                    Nickname: <br /> <input type="text" name="nick" /><br />
+        <section class="container">
+            <div class="wrapReg">
+                <div class="registration">
+                    <form class="formReg" method="post">
+
+
+                            <label>Nicknam:</label>
+                        <input class="inp" type="text" name="nick" required />
                     <?php
                         if(isset($_SESSION['e_nick']))      //Якщо помилка e_nick існує
                         {
@@ -145,7 +149,9 @@
                             unset($_SESSION['e_nick']);                               //Очищуємо змінну e_nick
                         }
                     ?>
-                    E-mail: <br /> <input type="text" name="email" /><br />
+
+                            <label>Nicknam:</label>
+                        <input class="inp" type="text" name="nick" required />
                     <?php
                         if(isset($_SESSION['e_email']))      //Якщо помилка e_email існує
                         {
@@ -153,7 +159,9 @@
                             unset($_SESSION['e_email']);                               //Очищуємо змінну e_email
                         }
                     ?>
-                    Your password: <br /> <input type="password" name="passwordReg1" /><br />
+
+                            <label>Your password:</label>
+                         <input class="inp" type="password" name="passwordReg1" required />
                     <?php
                         if(isset($_SESSION['e_password']))      //Якщо помилка e_password існує
                         {
@@ -161,14 +169,19 @@
                             unset($_SESSION['e_password']);                               //Очищуємо змінну e_password
                         }
                     ?>
-                    Repid password: <br /> <input type="password" name="passwordReg2" /><br />
-                    <label>
-                        <input type="checkbox" name="regulamin" /> ПIДТВЕРДИТИ
-                    </label> <br />
-                    <input type="submit" value="ЗАРЕЄСТРУВАТИСЬ" />
-                </form>
+
+                            <label>Repid password:</label>
+                         <input class="inp" type="password" name="passwordReg2" required />
+
+                        <label>
+                            <input class="inp" type="checkbox" name="regulamin" required/> ПIДТВЕРДИТИ
+                        </label>
+
+                        <input class="regSubmit" type="submit" value="ЗАРЕЄСТРУВАТИСЬ" required/>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
 
     </body>
 </html>
