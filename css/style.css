@@ -43,7 +43,7 @@ html {
 .form {
       /* border: 3px solid goldenrod;   */
     height: inherit;
-    min-height: 200px;
+    min-height: 300px;
     width: inherit;
     display: flex;   
      justify-content: space-around; 
@@ -52,6 +52,7 @@ html {
 }
 
 .form label {
+    text-transform: uppercase;
     
 }
 
@@ -63,10 +64,16 @@ html {
 }
 
 .loginSubmit {
-    border-radius: 2px;
+    border-radius: 5px;
     border-style: none;
      width: auto;   
-    /* height: 25px;   */
     padding: 15px;
+    margin: 40px;
     background-color: #36b17a;
+    color: white;
+}
+
+a {
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }

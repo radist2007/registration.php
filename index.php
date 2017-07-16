@@ -22,21 +22,22 @@
     <body onload="time()">
 
 
-        <div class="container">
+
+        <section class="container">
             <div class="wrap">
                 <div class="login">
-                    <form action="sources/checkIn.php" method="post">
+                    <form class="form" action="sources/checkIn.php" method="post">
                         <label>login:</label>
-                            <input type="text" name="login" placeholder="вкажіть логін" required>
-                        <label>password:</label> 
-                            <input type="password" name="password" >
-                        <input id="loginSubmit" type="submit" value="ОК">
+                            <input class="inp" type="text" name="login" placeholder="Вкажіть Ваш логін" required >
+                        <label>password:</label>
+                            <input class="inp" type="password" placeholder="Вкажіть Ваш пароль" name="password" >
+                        <button class="loginSubmit" type="submit" >ОК</button>
                     </form>
                     <br />
                 </div>
                     <a href="sources/registration.php">registration</a>
             </div>
-        </div>
+        </section>
 
 
 <?php
