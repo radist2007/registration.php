@@ -8,6 +8,12 @@ html {
     background-image: url("../img/escheresque_ste.png");
 
 }
+
+.header {
+    background-color: grey;
+    color: wheat;
+}
+
 .container {
     position: fixed;
     display: flex;

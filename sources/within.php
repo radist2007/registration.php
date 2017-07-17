@@ -21,10 +21,19 @@
         <script src="../js/jsTimer.js"></script>
     </head>
     <body>
+        <header class="header">
+            <h1>registration</h1>
+            <p>in</p>
+        </header>
+        <conteiner class="conteiner">
+            <div class="wrap">
+                <h2>wrap</h2>
 <?php
     echo "<p>Вітаю ".$_SESSION['user'].'![<a href="logout.php"> Logout</a>]</p>';
     
 ?>
+            </div>
+        </conteiner>
 
     </body>
 </html>

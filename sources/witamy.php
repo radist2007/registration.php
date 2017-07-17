@@ -27,7 +27,10 @@
     <body onload="time()">
 
 
-
+        <header class="header">
+            <h1>registration</h1>
+            <h4>тепер Ви залоговані</h4>
+        </header>
 
             <a href="../index.php">Увійти на свій акаунт</a>
 
