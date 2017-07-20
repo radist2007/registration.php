@@ -4,6 +4,12 @@
         width: 95%;
         height: 95%;
     }
+    
+
+    .form label {
+        border-bottom: 2px solid grey; 
+        padding: 10px;
+    }
 
     .loginSubmit {
         margin: 0px;

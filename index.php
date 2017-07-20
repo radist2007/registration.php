@@ -31,7 +31,7 @@
                         <label>login:</label>
                             <input class="inp" type="text" name="login" placeholder="Вкажіть Ваш логін" required >
                         <label>password:</label>
-                            <input class="inp" type="password" placeholder="Вкажіть Ваш пароль" name="password" required >>
+                            <input class="inp" type="password" placeholder="Вкажіть Ваш пароль" name="password" required >
                         <button class="loginSubmit" type="submit" >ОК</button>
                     </form>
                     <br />
