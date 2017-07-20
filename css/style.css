@@ -24,18 +24,19 @@ html {
 
 .wrap {
     border-radius: 10px;
-      /* border: 3px dotted red;   */
+       /* border: 3px dotted red;    */
     background-image: url("../img/concrete-texture.png");
     height: inherit; 
     width: 50%;
     height: 60%;
     overflow: hidden;
     display: flex; 
-    flex-direction: column;      
-    justify-content: center;    
+    flex-direction: column;
+    justify-content: center;
     margin: auto; 
     text-align: center; 
 }
+
 .wrapReg {
     border-radius: 10px;
        /* border: 3px dotted red;    */
@@ -45,39 +46,39 @@ html {
     height: 80%;
     overflow: hidden;
     display: flex; 
-    flex-direction: column;      
-    justify-content: center;    
+    flex-direction: column;
+    justify-content: center;
     margin: auto; 
     text-align: center; 
 }
 
 .login {
-     /* border: 3px solid green;   */
+      /* border: 3px solid green; */
     height: inherit;
     width: 80%;
-    display: flex;    
-    justify-content: center;    
-    margin: auto;  
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
  .registration { 
       /* border: 3px solid green;    */
     height: inherit;
     width: 80%;
-    display: flex;    
-    justify-content: center;    
-    margin: auto;  
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .form {
-       /* border: 3px solid goldenrod;    */
+        /* border: 3px solid goldenrod;     */
     height: inherit;
     min-height: 300px;
     width: inherit;
-    display: flex;   
-    justify-content: space-around; 
-    flex-direction: column;      
-    margin: auto;   
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
 }
 
 .formReg {
@@ -85,10 +86,10 @@ html {
     height: inherit;
     min-height: 300px;
     width: inherit;
-    display: flex;   
+    display: flex;
     justify-content: space-around; 
-    flex-direction: column;      
-    margin: auto;   
+    flex-direction: column;
+    margin: auto;
 }
 .form label {
     text-transform: uppercase;
@@ -108,7 +109,7 @@ html {
 .loginSubmit {
     border-radius: 5px;
     border-style: none;
-    width: auto;   
+    width: auto;
     padding: 15px;
     margin: 40px;
     background-color: #36b17a;
@@ -118,7 +119,7 @@ html {
 .regSubmit {
     border-radius: 5px;
     border-style: none;
-    width: auto;   
+    width: auto;
     padding: 15px;
     margin: 40px;
     background-color: #36b17a;

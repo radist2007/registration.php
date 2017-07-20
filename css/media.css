@@ -1,6 +1,17 @@
  @media only screen and (max-width: 500px) {
+
     .wrap {
-        width: 100%;
-        height: 90%;
+        width: 95%;
+        height: 95%;
     }
+
+    .loginSubmit {
+        margin: 0px;
+    }
+
+    a {
+        margin: 20px;
+    }
+
+
 }
