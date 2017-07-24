@@ -6,10 +6,13 @@
 html {
     height: 100%;
     background-image: url("../img/escheresque_ste.png");
-
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
     background-color: grey;
     color: wheat;
 }

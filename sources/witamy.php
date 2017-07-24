@@ -28,8 +28,12 @@
 
 
         <header class="header">
-            <h1>registration</h1>
-            <h4>тепер Ви залоговані</h4>
+
+            <section>
+                <h1>registration</h1>
+                <p>in</p>
+            </section>
+                <h3><span ><a href="index.php">logout</a></span></h3>
         </header>
 
             <a href="../index.php">Увійти на свій акаунт</a>
