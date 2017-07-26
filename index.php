@@ -22,8 +22,6 @@
     </head>
     <body onload="time()">
 
-
-
         <section class="container">
             <div class="wrap">
                 <div class="login">
@@ -39,7 +37,6 @@
                     <a href="sources/registration.php">registration</a>
             </div>
         </section>
-
 
 <?php
     if(isset($_SESSION['mistake']))            //Перевіряємо чи існує сесійна змінна помилки
