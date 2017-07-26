@@ -16,7 +16,7 @@
 <html lang="ua">
     <head>
         <meta charset="UTF-8">
-        <title>bylo4na</title>
+        <title>Registration completed</title>
         <meta name="description" content="Тестовий сайт, для перевірки реєстрації. PHP && MySql" />
         <meta name="keywords" content="тест, логін, пароль" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,7 @@
         <header class="header">
 
             <section>
-                <h1>registration</h1>
+                <h1>registration completed</h1>
                 <p>in</p>
             </section>
                 <h3><span ><a href="index.php">logout</a></span></h3>
