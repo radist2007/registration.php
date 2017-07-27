@@ -6,12 +6,11 @@
         exit();                                                            //Не загружаємо наступну частину сторінки
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="ua">
     <head>
         <meta charset="UTF-8">
-        <title>registration - login</title>
+        <title>login</title>            
         <meta name="description" content="Навчальний сайт, для перевірки реєстрації. PHP, MySql" />
         <meta name="keywords" content="реєстрація, логін, пароль" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
