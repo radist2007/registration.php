@@ -4,7 +4,7 @@
 
     if((!isset($_POST['login'])) || (!isset($_POST['password'])))   // Перевіряємо чи пароль та логін встановлені для цієї сесії
     {
-        header('Location: ../index.php');     //Повернаємо на стартову сторінку
+        header('Location: ../index.php'); // ../index.php');     //Повернаємо на стартову сторінку
         exit();                            //Закриваємо сесію
     }
 

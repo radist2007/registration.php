@@ -96,8 +96,9 @@
                     //Всі тести пройдено, додаємо користувача
                     if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email')"))
                     {
-                        // require_once "messageAboutRegistration.php";
-                        // $_SESSION['mess_about_reg'] = true;
+                        $_SESSION['mess_about_reg'] = true;
+                        require_once "messageAboutRegistration.php";
+
                         $_SESSION['udanarejestracja']=true;
                         header('Location: witamy.php');
                     }
@@ -142,7 +143,7 @@
                     ?>
 
                             <label>Email:</label>
-                        <input class="inp" type="text" name="nick" required />
+                        <input class="inp" type="text" name="email" required />
                     <?php
                         if(isset($_SESSION['e_email']))      //Якщо помилка e_email існує
                         {
@@ -161,14 +162,14 @@
                         }
                     ?>
 
-                            <label>Repid password:</label>
+                            <label>Repead password:</label>
                          <input class="inp" type="password" name="passwordReg2" required />
 
                         <label>
-                            <input class="inp" type="checkbox" name="regulamin" required/> ПIДТВЕРДИТИ
+                            <input class="inp" type="checkbox" name="regulamin" /> ПIДТВЕРДИТИ
                         </label>
 
-                        <input class="regSubmit" type="submit" value="ЗАРЕЄСТРУВАТИСЬ" required/>
+                        <input class="regSubmit" type="submit" value="ЗАРЕЄСТРУВАТИСЬ" />
                     </form>
                 </div>
             </div>
