@@ -174,6 +174,8 @@
                 </div>
             </div>
         </section>
-
+<?php
+    require "../blocks/footer/footer.php";   //Підключаємо футер
+?>
     </body>
 </html>

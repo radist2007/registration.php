@@ -41,6 +41,8 @@
 
 
 <?php
+    require "../blocks/footer/footer.php";   //Підключаємо футер
+
     if(isset($_SESSION['mistake']))            //Перевіряємо чи існує сесійна змінна помилки
     {
         echo $_SESSION['mistake'];             //Показуємо сесійну змінну помилки
