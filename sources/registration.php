@@ -127,8 +127,10 @@
 
 
         <section class="container">
-            <div class="social">
-                <a href="../index.php"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+            <div class="back">
+                <a href="../index.php">
+                    <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                </a>
             </div>
             <div class="wrapReg">
                 <div class="registration">

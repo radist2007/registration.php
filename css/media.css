@@ -8,9 +8,9 @@
 
      .wrapReg {
         border-radius: 20px;
-         /* border: 3px dotted red;     */
+          /* border: 3px dotted red;      */
         background-image: url("../img/concrete-texture.png");
-         height: inherit;  
+        height: inherit;  
         width: 90%;
         height: 90%;
         overflow: hidden; 
