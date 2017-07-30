@@ -3,13 +3,13 @@
                 <div>Radist2007 &copy; 2017</div>
                 <div class="social">
                     <a href="http://facebook.com" target="_blank">
-                        Facebook
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     </a>
                     <a href="http://facebook.com" target="_blank">
-                        Tvitter
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                     <a href="http://facebook.com" target="_blank">
-                        google+
+                        <i class="fa fa-google-plus-official" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>

@@ -42,13 +42,8 @@
     {
         echo $_SESSION['mistake'];             //Показуємо сесійну змінну помилки
     }
-?>
-        <footer class="footer">
-            <div class="footer__develop">
-                <div>Radist2007 &copy</div>
-                <div>2017</div>
-            </div>
-        </footer>
 
+    require "blocks/footer/footer.php";   //Підключаємо футер
+?>
     </body>
 </html>
