@@ -25,25 +25,33 @@ html {
 .container {
     position: fixed;
     display: flex;
-    /* flex-direction: column-reverse; */
     height: 100%; 
     width: 100%; 
-       /* border: 3px solid yellow;    */
 }
 
 .wrap {
     border-radius: 10px;
-        /* border: 3px dotted red;     */
+         border: 3px dotted red;     
     background-image: url("../img/concrete-texture.png");
     height: inherit; 
     width: 50%;
     height: 60%;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex; 
     flex-direction: column;
     justify-content: center;
     margin: auto; 
     text-align: center; 
+}
+
+.wrap::before .wrap::after {
+    content: " ";
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blue;
 }
 
 .wrapReg {
@@ -169,6 +177,10 @@ a, a:hover {
     padding: 20px;
     position: absolute;
     font-size: 30px;
+}
+
+.text {
+
 }
 
 .footer {
