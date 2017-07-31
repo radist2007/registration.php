@@ -1,7 +1,8 @@
-<h1 style="text-align: center;">registration.php</h1><br /><hr />  навчальний проєкт, для відпрацювання логування з допомогою php
-та перевірки роботи з базами даних mysql.
+<h1 style="text-align: center;">registration.php</h1><br />
+ <p>навчальний проєкт, для відпрацювання логування з допомогою php
+та перевірки роботи з базами даних mysql.</p><hr /> 
 
-HTML CSS php mysql.
+<p>HTML CSS php mysql.</p>
 
 
 1. Регістарація
