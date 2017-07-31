@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">registration.php</h1><br />  навчальний проєкт, для відпрацювання логування з допомогою php
+<h1 style="text-align: center;">registration.php</h1><br /><hr />  навчальний проєкт, для відпрацювання логування з допомогою php
 та перевірки роботи з базами даних mysql.
 
 HTML CSS php mysql.
