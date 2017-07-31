@@ -1,5 +1,5 @@
 <h1 align="center" style="text-align: center;">registration.php</h1><br />
- <p>Навчальний проєкт, для відпрацювання логування з допомогою php
+ <p align="center" style="text-align: center;">Навчальний проєкт, для відпрацювання логування з допомогою php
 та перевірки роботи з базами даних mysql.</p><hr /> 
 
 <p>HTML CSS php mysql.</p>
