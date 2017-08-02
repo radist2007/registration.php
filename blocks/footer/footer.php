@@ -5,10 +5,10 @@
                     <a href="http://facebook.com" target="_blank">
                         <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     </a>
-                    <a href="http://facebook.com" target="_blank">
+                    <a href="https://twitter.com/" target="_blank">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a href="http://facebook.com" target="_blank">
+                    <a href="https://plus.google.com/" target="_blank">
                         <i class="fa fa-google-plus-official" aria-hidden="true"></i>
                     </a>
                 </div>
