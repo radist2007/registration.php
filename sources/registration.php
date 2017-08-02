@@ -123,7 +123,7 @@
     require "../blocks/head/head.php";   //Підключаємо хедер
 ?>
 
-    <body>
+    <body onload=time();>
 
 
         <section class="container">
@@ -132,6 +132,7 @@
                     <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                 </a>
             </div>
+            <div id="time" class="back"></div>
             <div class="wrapReg">
                 <div class="registration">
                     <form class="formReg" method="post">

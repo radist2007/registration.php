@@ -22,6 +22,7 @@
     <body onload="time()">
 
         <section class="container">
+            <div id="time"></div>
             <div class="wrap">
                 <div class="login">
                     <form class="form" action="sources/checkIn.php" method="post">
