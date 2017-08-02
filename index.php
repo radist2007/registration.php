@@ -16,25 +16,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
         <script src="js/jsTimer.js"></script>
+        <script src="js/jsBtn.js"></script>
     </head>
     <body onload="time()">
 
         <section class="container">
 
             <div id="time" class="back"></div>
-            <div class="wrap">
-                <div class="login">
+            <div class="wrap animated bounceInUp">
+                <div class="login ">
+                 <!-- <button onclick="a()">Click Me</button>  -->
                     <form class="form" action="sources/checkIn.php" method="post">
-                        <label>login:</label>
-                            <input class="inp" type="text" name="login" placeholder="Вкажіть Ваш логін" required >
+                        <label >login:</label>
+                            <input id="inpLogin" class="inp" type="text" name="login" placeholder="Вкажіть Ваш логін" required autofocus >
                         <label>password:</label>
-                            <input class="inp" type="password" placeholder="Вкажіть Ваш пароль" name="password" required >
-                        <button class="loginSubmit" type="submit" >ОК</button>
+                            <input id="inpPassword" class="inp" type="password" placeholder="Вкажіть Ваш пароль" name="password" required >
+                        <button class="loginSubmit" id="loginSubmit" type="submit" >ОК</button>
                     </form>
                     <br />
                 </div>
+                     <!-- <input id="inpTest" type="text" name="test" value="" style="height: 30px;"> -->
                     <a href="sources/registration.php">registration</a>
             </div>
         </section>

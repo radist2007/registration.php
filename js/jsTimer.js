@@ -1,5 +1,6 @@
 function time(){
 
+
 	var today = new Date();    //Отримуэмо повну інфорамацію, про дату та час - зараз
 
 	var day = today.getDate();       //Отримуємо день

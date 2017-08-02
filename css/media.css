@@ -4,6 +4,10 @@
     .wrap, wrapReg {
         width: 95%;
         height: 95%;
+        -webkit-transition: all.6s ease;
+        -moz-transition: all.6s ease;
+        -o-transition: all.6s ease;
+        transform: all.6s ease;
     }
 
      .wrapReg {
@@ -18,7 +22,56 @@
         flex-direction: column;
         justify-content: center;
         margin: auto; 
-        text-align: center; 
+        text-align: center;
+        -webkit-transition: all.6s ease;
+        -moz-transition: all.6s ease;
+        -o-transition: all.6s ease;
+        transform: all.6s ease;
+    } 
+
+    .form label {
+        border-bottom: 2px solid grey; 
+        padding: 10px;
+    }
+
+    .loginSubmit {
+        margin: 0px;
+    }
+
+    a {
+        margin: 20px;
+    }
+
+}
+@media only screen and (max-width: 920px) {
+     /* For mobile phones: */
+
+    .wrap, wrapReg {
+        width: 70%;
+        height: 70%;
+        -webkit-transition: all.6s ease;
+        -moz-transition: all.6s ease;
+        -o-transition: all.6s ease;
+        transform: all.6s ease;
+    }
+
+     .wrapReg {
+        border-radius: 20px;
+          /* border: 3px dotted red;      */
+        background-image: url("../img/concrete-texture.png");
+        height: inherit;  
+        width: 70%;
+        height: 80%;
+        overflow: hidden; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        margin: auto; 
+        text-align: center;
+        -webkit-transition: all.6s ease;
+        -moz-transition: all.6s ease;
+        -o-transition: all.6s ease;
+        transform: all.6s ease;
     } 
 
     .form label {
@@ -42,6 +95,10 @@
     .wrap, wrapReg {
         width: 85%;
         height: 85%;
+        -webkit-transition: all.6s ease;
+        -moz-transition: all.6s ease;
+        -o-transition: all.6s ease;
+        transform: all.6s ease;
     }
 
     .form label {

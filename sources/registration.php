@@ -134,6 +134,10 @@
             </div>
             <div id="time" class="back"></div>
             <div class="wrapReg">
+                <div id="img">
+                    <img id="female" src="../img/female-720.png" alt="famale"></img>
+                    <img id="male" src="../img/male-720.png" alt="male"></img>
+                </div>
                 <div class="registration">
                     <form class="formReg" method="post">
 
