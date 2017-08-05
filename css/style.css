@@ -232,3 +232,9 @@ a, a:hover {
      top: 20px; 
      right: 30%;
 }
+
+#spanInpLog {
+    position: absolute;
+    right: 21%;
+
+}
