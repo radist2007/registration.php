@@ -178,7 +178,7 @@ a, a:hover {
     -webkit-transition: all.6s ease;
     -moz-transition: all.6s ease;
     -o-transition: all.6s ease;
-    transform: all.6s ease;
+    transition: all.6s ease;
 }
 
 .back {
@@ -227,10 +227,18 @@ a, a:hover {
 #male {
      top: 20px; 
      left: 30%;
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    transition: all.6s ease;
 }
 #female {
      top: 20px; 
      right: 30%;
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    transition: all.6s ease;
 }
 
 #spanInpLog {

@@ -133,16 +133,16 @@
                 </a>
             </div>
             <div id="time" class="back"></div>
-            <div class="wrapReg">
+            <div class="wrapReg animated bounceInUp">
                 <div id="img">
-                    <img id="female" src="../img/female-720.png" alt="famale"></img>
+                    <img id="female" src="../img/female-720.png" alt="famale" ></img>
                     <img id="male" src="../img/male-720.png" alt="male"></img>
                 </div>
                 <div class="registration">
                     <form class="formReg" method="post">
 
 
-                            <label>Nicknam:</label>
+                            <label id="nick">Nicknam:</label>
                         <input class="inp" type="text" name="nick" required />
                     <?php
                         if(isset($_SESSION['e_nick']))      //Якщо помилка e_nick існує
@@ -188,4 +188,5 @@
     require "../blocks/footer/footer.php";   //Підключаємо футер
 ?>
     </body>
+         <script src="../js/jsBtn.js"></script> 
 </html>
