@@ -4,7 +4,7 @@
 та перевірки роботи з базами даних mysql.</i></p><hr /> 
 
 
-<p>HTML CSS js php mysql.</p>
+ <p align="center" style="text-align: center;">HTML CSS js php mysql.</p>
 
 
  <h4>Регістарація</h4>
@@ -15,4 +15,4 @@
     г) js анимація, дата/час
     д) адапривність сайта
 
-<p> 2017 </p>
+<p align="center" style="text-align: center;"> 2017 </p>
