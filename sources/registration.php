@@ -94,13 +94,13 @@
                 if($all_OK==true)
                 {
                     //Всі тести пройдено, додаємо користувача
-                    if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email')"))
+                    if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email', NULL)"))
                     {
                         $_SESSION['mess_about_reg'] = true;
                         require_once "messageAboutRegistration.php";
 
                         $_SESSION['udanarejestracja']=true;
-                        header('Location: witamy.php');
+                        header('Location: Congratulations.php');
                     }
                     else
                     {

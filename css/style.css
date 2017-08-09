@@ -133,7 +133,7 @@ html {
 }
 
 .loginSubmit {
-     display: none; 
+      /* display: none;   */
     border-radius: 5px;
     border-style: none;
     width: auto;
