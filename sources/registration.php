@@ -93,6 +93,20 @@
                 }
                 if($all_OK==true)
                 {
+
+
+
+
+
+                    $gender = $_GET['gender'];
+                    if($gender == true){
+                        header('Location: admin.php');
+                    }
+
+
+
+
+
                     //Всі тести пройдено, додаємо користувача
                     if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email', NULL)"))
                     {
@@ -188,5 +202,6 @@
     require "../blocks/footer/footer.php";   //Підключаємо футер
 ?>
     </body>
-         <script src="../js/jsBtn.js"></script> 
+        <script src="../js/registration.js"></script> 
+        <script src="../js/Timer.js"></script>
 </html>
