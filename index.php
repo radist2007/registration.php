@@ -18,8 +18,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
-        <script src="js/jsTimer.js"></script>
-        <script src="js/jsBtn.js"></script>
+        <script src="js/Timer.js"></script>
     </head>
     <body onload="time()">
 
@@ -28,7 +27,6 @@
             <div id="time" class="back"></div>
             <div class="wrap animated bounceInUp">
                 <div class="login ">
-                 <!-- <button onclick="a()">Click Me</button>  -->
                     <form class="form" action="sources/checkIn.php" method="post">
                         <label >login:</label>
                             <input id="inpLogin" class="inp" type="text" name="login" placeholder="Вкажіть Ваш логін" required autofocus />
@@ -38,7 +36,6 @@
                     </form>
                     <br />
                 </div>
-                      <!-- <input id="inpTest" type="text" name="test" value="" style="height: 30px;">  -->
                     <a href="sources/registration.php">registration</a>
             </div>
         </section>

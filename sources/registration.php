@@ -94,19 +94,6 @@
                 if($all_OK==true)
                 {
 
-
-
-
-
-                    $gender = $_GET['gender'];
-                    if($gender == true){
-                        header('Location: admin.php');
-                    }
-
-
-
-
-
                     //Всі тести пройдено, додаємо користувача
                     if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email', NULL)"))
                     {
