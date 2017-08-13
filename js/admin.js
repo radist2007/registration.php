@@ -11,7 +11,7 @@ window.onload = function() {
        female = true;
        console.log('female check');
        var gender = true;
-       window.location.href = "admin.php?gender=" + gender; 
+    //    window.location.href = "admin.php?gender=" + gender; 
     }
 
     function checkMale() {
@@ -22,5 +22,4 @@ window.onload = function() {
        var gender = "male";
        window.location.href = "admin.php?gender=" + gender; 
     }
-
 }

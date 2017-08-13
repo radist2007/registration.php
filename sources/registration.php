@@ -52,6 +52,14 @@
             $_SESSION['e_password']="Паролі не співпадають";
         }
 
+        // Додаємо гендер
+        if(isset($_GET['gender'])) 
+        {
+            $gender = $_GET['gender'];
+        } else {
+            $gender = "nogender";
+        }
+
         // Хешування пароля 
         $password_hash = password_hash($password1, PASSWORD_DEFAULT); //Хешуємо пароль
 
@@ -95,7 +103,7 @@
                 {
 
                     //Всі тести пройдено, додаємо користувача
-                    if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email', NULL)"))
+                    if($connect->query("INSERT INTO users VALUES (NULL, '$nick', '$password_hash', '$email', '$gender')"))
                     {
                         $_SESSION['mess_about_reg'] = true;
                         require_once "messageAboutRegistration.php";
@@ -124,8 +132,9 @@
     require "../blocks/head/head.php";   //Підключаємо хедер
 ?>
 
-    <body onload=time();>
 
+    <body onload="time()">
+            <div id="time" class="back">time</div>
 
         <section class="container">
             <div class="back">
@@ -133,15 +142,15 @@
                     <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                 </a>
             </div>
-            <div id="time" class="back"></div>
-            <div class="wrapReg animated bounceInUp">
-                <div id="img">
-                    <img id="female" src="../img/female-720.png" alt="famale" ></img>
-                    <img id="male" src="../img/male-720.png" alt="male"></img>
-                </div>
-                <div class="registration">
-                    <form class="formReg" method="post">
 
+            <div class="wrapReg animated bounceInUp">
+
+                <div class="registration">
+                    <form class="formReg" method="get">
+                        <div id="img">
+                            <img id="female" src="../img/female-720.png" alt="famale" ></img>
+                            <img id="male" src="../img/male-720.png" alt="male"></img>
+                        </div>
 
                             <label id="nick">Nicknam:</label>
                         <input class="inp" type="text" name="nick" required />
@@ -188,7 +197,7 @@
 <?php
     require "../blocks/footer/footer.php";   //Підключаємо футер
 ?>
-    </body>
         <script src="../js/registration.js"></script> 
-        <script src="../js/Timer.js"></script>
+        <script src="../js/timer.js"></script>
+    </body>
 </html>

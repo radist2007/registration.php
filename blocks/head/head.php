@@ -10,5 +10,5 @@
         <link href="../css/style.css" rel="stylesheet">
         <link href="../css/animate.css" rel="stylesheet">
         <link href="../css/media.css" rel="stylesheet">
-         <script src="../js/Timer.js"></script> 
+         <script src="../js/timer.js"></script> 
     </head>
