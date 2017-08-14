@@ -12,12 +12,15 @@
     <body onload="time()">
 
         <section class="container">
+
             <div class="back">
                 <a href="../index.php">
                     <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                 </a>
             </div>
+
             <div id="time" class="back"></div>
+
             <div class="wrap animated bounceInUp">
                 <div class="login ">
                     <form class="form" action="sources/checkIn.php" method="post">
@@ -31,6 +34,7 @@
                 </div>
                     <a href="../sources/registration.php">registration</a>
             </div>
+
         </section>
 
 <?php

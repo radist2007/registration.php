@@ -134,19 +134,22 @@
 
 
     <body onload="time()">
-            <div id="time" class="back">time</div>
 
         <section class="container">
+
             <div class="back">
                 <a href="../index.php">
                     <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                 </a>
             </div>
 
+            <div id="time" class="back">time</div>
+
             <div class="wrapReg animated bounceInUp">
 
                 <div class="registration">
                     <form class="formReg" method="get">
+
                         <div id="img">
                             <img id="female" src="../img/female-720.png" alt="famale" ></img>
                             <img id="male" src="../img/male-720.png" alt="male"></img>
@@ -154,36 +157,36 @@
 
                             <label id="nick">Nicknam:</label>
                         <input class="inp" type="text" name="nick" required />
-                    <?php
-                        if(isset($_SESSION['e_nick']))      //Якщо помилка e_nick існує
-                        {
-                            echo '<div class="error">'.$_SESSION['e_nick'].'</div>';  //Виводимо помилку e_nick
-                            unset($_SESSION['e_nick']);                               //Очищуємо змінну e_nick
-                        }
-                    ?>
+                        <?php
+                            if(isset($_SESSION['e_nick']))      //Якщо помилка e_nick існує
+                            {
+                                echo '<div class="error">'.$_SESSION['e_nick'].'</div>';  //Виводимо помилку e_nick
+                                unset($_SESSION['e_nick']);                               //Очищуємо змінну e_nick
+                            }
+                        ?>
 
                             <label>Email:</label>
                         <input class="inp" type="text" name="email" required />
-                    <?php
-                        if(isset($_SESSION['e_email']))      //Якщо помилка e_email існує
-                        {
-                            echo '<div class="error">'.$_SESSION['e_email'].'</div>';  //Виводимо помилку e_email
-                            unset($_SESSION['e_email']);                               //Очищуємо змінну e_email
-                        }
-                    ?>
+                        <?php
+                            if(isset($_SESSION['e_email']))      //Якщо помилка e_email існує
+                            {
+                                echo '<div class="error">'.$_SESSION['e_email'].'</div>';  //Виводимо помилку e_email
+                                unset($_SESSION['e_email']);                               //Очищуємо змінну e_email
+                            }
+                        ?>
 
                             <label>Your password:</label>
-                         <input class="inp" type="password" name="passwordReg1" required />
-                    <?php
-                        if(isset($_SESSION['e_password']))      //Якщо помилка e_password існує
-                        {
-                            echo '<div class="error">'.$_SESSION['e_password'].'</div>';  //Виводимо помилку e_password
-                            unset($_SESSION['e_password']);                               //Очищуємо змінну e_password
-                        }
-                    ?>
+                        <input class="inp" type="password" name="passwordReg1" required />
+                        <?php
+                            if(isset($_SESSION['e_password']))      //Якщо помилка e_password існує
+                            {
+                                echo '<div class="error">'.$_SESSION['e_password'].'</div>';  //Виводимо помилку e_password
+                                unset($_SESSION['e_password']);                               //Очищуємо змінну e_password
+                            }
+                        ?>
 
                             <label>Repead password:</label>
-                         <input class="inp" type="password" name="passwordReg2" required />
+                        <input class="inp" type="password" name="passwordReg2" required />
 
                         <label>
                             <input class="inp" type="checkbox" name="regulamin" /> ПIДТВЕРДИТИ
