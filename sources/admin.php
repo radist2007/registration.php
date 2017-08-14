@@ -81,10 +81,7 @@
     }
 </script>
 
-    
     <body onload="time()">
-
-
 
             <section class="container">
             <div class="back">
@@ -93,11 +90,11 @@
                 </a>
             </div>
             <div id="time" class="back"></div>
-              <div class="wrapReg animated bounceInUp">  
-                <div id="img">
-                    <img id="female" src="../img/female-720.png" alt="famale" ></img>
-                    <img id="male" src="../img/male-720.png" alt="male"></img>
-                </div>
+                <div class="wrapReg animated bounceInUp">  
+                    <div id="img">
+                        <img id="female" src="../img/female-720.png" alt="famale" ></img>
+                        <img id="male" src="../img/male-720.png" alt="male"></img>
+                    </div>
 <?php
     echo "<div><h3>Вітаю ".$_SESSION['user'].'!</h3></div>';
 ?>

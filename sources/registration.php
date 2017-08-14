@@ -192,6 +192,7 @@
                         <input class="regSubmit" type="submit" value="ЗАРЕЄСТРУВАТИСЬ" />
                     </form>
                 </div>
+                    <a href="../sources/login.php">login</a>
             </div>
         </section>
 <?php

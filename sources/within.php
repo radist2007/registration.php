@@ -10,7 +10,8 @@
     require "../blocks/head/head.php";   //Підключаємо хедер
 ?>
 
-    <body>
+
+    <body onload="time()">
 
             <section class="container">
                 <div class="wrap">
